@@ -375,7 +375,7 @@ span.child_sm_bg {
     padding-bottom: 20px;
 }
 
-.container-fluid.destinations_body {
+.destinations_body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,7 +387,7 @@ span.child_sm_bg {
 }
 
 @media (min-width: 990px) and (max-width: 1290px) {
-    .container-fluid.destinations_body {
+    .destinations_body {
         display: flex;
         justify-content: center;
         align-items: center;

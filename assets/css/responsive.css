@@ -90,7 +90,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .container-fluid.destinations_body {
+    .destinations_body {
         margin-left: 0;
         margin-right: 0;
         display: flex;

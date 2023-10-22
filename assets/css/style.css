@@ -62,15 +62,20 @@ a.sign_up:hover {
 .header-main {
     padding: 20px 0;
     display: flex;
-    top: 0px;
+    top: 0;
     position: fixed;
     width: 100%;
-    backdrop-filter: blur(0);
-    background-color: #FFF;
+    backdrop-filter: blur(8px);
+    background-color: #ffffff30;
     /* background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%); */
-    /* transition: backdrop-filter 0.3s, background-color 0.3s; */
+    transition: backdrop-filter 0.3s, background-color 0.3s;
     z-index: 9999;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
 
+.header-main.hidden {
+    transform: translateY(-100%);
 }
 
 .form-select {

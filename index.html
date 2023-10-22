@@ -336,6 +336,25 @@
             window.open("", "_blank");
         }
     </script>
+
+    <!-- Sticky Header -->
+    <script>
+        let prevScrollPos = window.pageYOffset;
+        const header = document.querySelector(".header-main");
+
+        window.onscroll = function () {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollPos > currentScrollPos) {
+                // Scrolling up, show the header
+                header.classList.remove("hidden");
+            } else {
+                // Scrolling down, hide the header
+                header.classList.add("hidden");
+            }
+            prevScrollPos = currentScrollPos;
+        }
+    </script>
+
 </body>
 
 </html>

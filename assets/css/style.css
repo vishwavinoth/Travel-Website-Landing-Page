@@ -93,7 +93,7 @@ a.sign_up:hover {
 /* Hero */
 .hero__component {
     position: relative;
-    /* top: 100px; */
+    top: 60px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -246,9 +246,11 @@ a.sign_up:hover {
 /* Services */
 .service_component {
     display: flex;
-    margin-bottom: 40px;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .child_title {
@@ -256,6 +258,7 @@ a.sign_up:hover {
     font-weight: 600;
     display: block;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .parent_title {
@@ -264,6 +267,7 @@ a.sign_up:hover {
     font-family: var(--font-volkhov);
     color: var(--rd);
     text-align: center;
+    margin-bottom: 20px;
 }
 
 /* stars  */
@@ -330,8 +334,8 @@ a.sign_up:hover {
 
 span.child {
     position: absolute;
-    top: 1245px;
-    left: 420px;
+    top: 1210px;
+    left: 425px;
     border-radius: var(--br-11xl) 0 var(--br-3xs) 0;
     background-color: var(--color-salmon);
     width: 100px;
@@ -354,4 +358,133 @@ span.child_sm_bg {
 
 .w_45 {
     width: 45px;
+}
+
+/* Top Destinations */
+.destinations_component {
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-fluid.destinations_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px 0;
+    z-index: 1;
+}
+
+@media (min-width: 990px) and (max-width: 1290px) {
+    .container-fluid.destinations_body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 88px;
+        padding: 20px 0;
+    }
+}
+
+
+.destinations_component .item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: transform 1s, filter 0.3s;
+}
+
+.destinations_component .item:hover {
+    transform: scale(1.01);
+}
+
+.destinations_component .item:hover~.item {
+    filter: blur(3px);
+    transform: scale(0.9);
+
+}
+
+/* .destinations_component .item:hover~.item_box {} */
+
+
+.destinations_component .item .items_content {
+    display: flex;
+    /* padding: 20px; */
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* gap: 10px; */
+    transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+    justify-content: center;
+}
+
+.destinations_component .item .items_content .item_img {
+    width: 315px;
+    height: 321.97px;
+    max-width: 315px;
+}
+
+.items_content .item_box {
+    display: grid;
+    align-items: center;
+    justify-items: stretch;
+    border-radius: 0 0 var(--br-5xl) var(--br-5xl);
+    background-color: var(--white);
+    width: 315px;
+    height: 130px;
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02), 0 64.8px 46.85px rgba(0, 0, 0, 0.02), 0 38.5px 25.48px rgba(0, 0, 0, 0.01), 0 20px 13px rgba(0, 0, 0, 0.01), 0 8.1px 6.52px rgba(0, 0, 0, 0.01), 0 1.9px 3.15px transparent;
+    padding: 20px;
+}
+
+/* .items_content .item_box:hover {} */
+
+.destinations_component .item .items_content .item_box .item_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 100px;
+}
+
+.destinations_component .item .items_content .item_box .item_title h6 {
+    font-size: var(--font-size-lg);
+    color: var(--text-clr);
+    font-family: var(--font-poppins);
+}
+
+.destinations_component .item .items_content .item_box .item_map {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.item_box .item_map p {
+    font-size: var(--font-size-base);
+    font-family: var(--font-poppins);
+    font-weight: 500;
+}
+
+img.navigation-icon {
+    margin-bottom: 12px;
+}
+
+
+.decore-icon {
+    position: absolute;
+    bottom: 155px;
+    left: 525px;
+    max-width: 97px;
+    height: 253px;
+    z-index: 0;
 }

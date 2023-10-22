@@ -174,9 +174,69 @@
                 </div>
             </div>
         </div>
+
+        <!-- Top Destinations -->
+        <div class="destinations_component">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <b class="child_title">Top Selling</b>
+                        <h2 class="parent_title">Top Destinations</h2>
+                    </div>
+                    <img class="decore-icon bounceUpDown" alt="" src="assets/images/decore1.svg">
+                    <div class="container-fluid destinations_body">
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-6 item">
+                            <div class="items_content glareType2">
+                                <img class="item_img" alt="" src="assets/images/rectangle-141@2x.png" />
+                                <div class="item_box">
+                                    <div class="item_title">
+                                        <h6>Rome, Italty</h6>
+                                        <h6>$5,42k</h6>
+                                    </div>
+                                    <div class="item_map">
+                                        <img class="navigation-icon" alt="" src="assets/images/navigation-1.svg">
+                                        <p>10 Days Trip</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-6 item">
+                            <div class="items_content glareType2">
+                                <img class="item_img" alt="" src="assets/images/rectangle-142@2x.png" />
+                                <div class="item_box">
+                                    <div class="item_title">
+                                        <h6>London, UK</h6>
+                                        <h6>$4.2k</h6>
+                                    </div>
+                                    <div class="item_map">
+                                        <img class="navigation-icon" alt="" src="assets/images/navigation-1.svg">
+                                        <p>12 Days Trip</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-6 item">
+                            <div class="items_content glareType2">
+                                <img class="item_img" alt="" src="assets/images/rectangle-14@2x.png" />
+                                <div class="item_box">
+                                    <div class="item_title">
+                                        <h6>Full Europe</h6>
+                                        <h6>$15k</h6>
+                                    </div>
+                                    <div class="item_map">
+                                        <img class="navigation-icon" alt="" src="assets/images/navigation-1.svg">
+                                        <p>28 Days Trip</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <p style="padding: 500px"></p>
 
     <!-- Bootstrap Bundle with Popper JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -189,6 +249,13 @@
     <script>
         VanillaTilt.init(document.querySelectorAll(".glareType"), {
             max: 2,
+            speed: 700,
+            glare: true,
+            "max-glare": 0.1,
+        });
+
+        VanillaTilt.init(document.querySelectorAll(".glareType2"), {
+            max: 3,
             speed: 700,
             glare: true,
             "max-glare": 0.1,
@@ -216,6 +283,51 @@
                 heroBg.style.display = "block";
             }
         });
+    </script>
+
+    <!-- Card :Hover with Blur -->
+    <script>
+        // Get all the item elements
+        const itemElements = document.querySelectorAll('.destinations_component .item');
+
+        // Add a hover event listener to each item
+        itemElements.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                // Apply the scale effect to the hovered item
+                item.style.transform = 'scale(1.05)';
+
+                // Apply the blur effect to other items
+                itemElements.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.style.filter = 'blur(3px)';
+                        otherItem.style.transform = 'scale(0.9)';
+                        otherItem.style.boxShadow = 'none';
+                    }
+                });
+
+                // Remove box-shadow for .item_box when hovered
+                item.querySelector('.items_content .item_box').style.boxShadow = '0 100px 80px rgba(0, 0, 0, 0.02), 0 64.8px 46.85px rgba(0, 0, 0, 0.02), 0 38.5px 25.48px rgba(0, 0, 0, 0.01), 0 20px 13px rgba(0, 0, 0, 0.01), 0 8.1px 6.52px rgba(0, 0, 0, 0.01), 0 1.9px 3.15px transparent';
+            });
+
+            // Add a mouse leave event listener to reset the effects
+            item.addEventListener('mouseleave', () => {
+                // Reset the transform and remove blur for the hovered item
+                item.style.transform = 'none';
+                item.style.filter = 'none';
+
+                // Reset the transform and remove blur for other items
+                itemElements.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.style.transform = 'none';
+                        otherItem.style.filter = 'none';
+                    }
+                });
+
+                // Reset the box-shadow for .item_box when mouse leaves
+                item.querySelector('.items_content .item_box').style.boxShadow = '0 100px 80px rgba(0, 0, 0, 0.02), 0 64.8px 46.85px rgba(0, 0, 0, 0.02), 0 38.5px 25.48px rgba(0, 0, 0, 0.01), 0 20px 13px rgba(0, 0, 0, 0.01), 0 8.1px 6.52px rgba(0, 0, 0, 0.01), 0 1.9px 3.15px transparent';
+            });
+        });
+
     </script>
 
     <!-- onClick -->

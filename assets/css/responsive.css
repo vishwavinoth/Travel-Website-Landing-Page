@@ -196,27 +196,32 @@
     .hero_bottons {
         align-items: flex-start;
     }
+
     .hero_bottons .play_demo_btn {
         align-items: flex-start;
         padding-top: 20px;
     }
+
     .hero_bottons .play_demo_btn img {
         position: relative;
         /* bottom: 25px; */
         top: -25px;
     }
+
     .slider_img img {
         position: relative;
         right: 20px;
         transition: transform 0.3s ease;
         max-width: 400px;
     }
+
     .tagline {
         font-size: large;
         text-transform: uppercase;
         color: var(--color-salmon);
         margin-bottom: 0px;
     }
+
     .single_service {
         display: flex;
         flex-direction: column;
@@ -226,17 +231,41 @@
         align-content: center;
         margin-bottom: 20px;
     }
+
     .service_component {
         margin-top: 50px;
         margin-bottom: 50px;
         padding-top: 0px;
         padding-bottom: 0px;
     }
+
     .single_service_inner {
         width: 267px;
         height: 314px;
     }
+
     .navbar-light .navbar-toggler::-ms-expand .header-main {
         background-color: black;
     }
 }
+
+
+/* Media Query for iPad (landscape) and larger */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .destinations_body {
+        display: contents;
+    }
+
+    .mt_ipad {
+        margin-top: 40px;
+    }
+}
+
+@media (width: 1024px) and (height: 1366px) {
+    .destinations_body {
+        display: flex;
+    }
+}
+
+/* Media Query for Mobile Devices (less than 768px) */
+@media (max-width: 767px) {}

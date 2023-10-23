@@ -193,9 +193,9 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-
+    
     .testimonials_component {
-        height: 650px;
+        height: 400px;
     }
 
     span.child {

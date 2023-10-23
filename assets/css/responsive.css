@@ -44,6 +44,20 @@
         backdrop-filter: blur(8px);
         /* z-index: 9999; */
     }
+
+    .testimonials_component {
+        height: 650px;
+    }
+
+    .newsletter__block h3 {
+        font-size: 19px;
+        line-height: normal;
+        padding-bottom: 0;
+    }
+
+    img.newsletter__icon {
+        display: none;
+    }
 }
 
 /* Custom Media query */
@@ -117,6 +131,15 @@
         backdrop-filter: blur(8px);
         /* z-index: 9999; */
     }
+
+    .testimonials_component {
+        height: 400px;
+    }
+
+
+    .testimonials_component {
+        height: 650px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -153,6 +176,93 @@
     .book_a_trip_inner {
         display: block;
     }
+
+    .newsletter__block h3 {
+        font-size: 19px;
+        line-height: normal;
+        padding-bottom: 0;
+    }
+
+    .form_block {
+        left: 0%;
+    }
+
+    .customer-logos.slider_block {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .testimonials_component {
+        height: 650px;
+    }
+
+    span.child {
+        display: none;
+    }
+
+    .book_a_trip_card_child {
+        position: absolute;
+        left: 35%;
+        top: 62.5%;
+
+    }
+
+    .heart {
+        position: absolute;
+        top: 64%;
+        margin-top: 10px;
+        left: 40%;
+
+    }
+
+    footer.row.row-cols-5.py-5.my-2.site_footer {
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: stretch;
+    }
+
+    .form_block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        left: 5%;
+    }
+
+    footer.row.row-cols-5.py-5.my-2 {
+        display: grid;
+        justify-items: stretch;
+        padding-right: 30px;
+        padding-left: 30px;
+        max-width: 400px;
+    }
+
+    .footer_info p {
+        font-family: var(--font-poppins);
+        font-size: 13px;
+        line-height: 124.5%;
+        font-weight: 500;
+        color: var(--text-clr);
+        width: 300px;
+    }
+
+    .footer_discover {
+        width: fit-content;
+        display: flex;
+        position: relative;
+        right: 20px;
+    }
+
+    input#email {
+        max-width: 300px;
+        height: 68px;
+    }
 }
 
 /* ----------- iPad Pro ----------- */
@@ -184,6 +294,10 @@
         margin-bottom: 50px;
         padding-top: 0px;
         padding-bottom: 0px;
+    }
+
+    .testimonials_component {
+        height: 650px;
     }
 }
 
@@ -281,6 +395,17 @@
     .navbar-light .navbar-toggler::-ms-expand .header-main {
         background-color: black;
     }
+
+    .testimonials_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .testimonials_component {
+        height: 650px;
+    }
 }
 
 
@@ -293,11 +418,37 @@
     .mt_ipad {
         margin-top: 40px;
     }
+
+    .newsletter__bg {
+        right: 0%;
+    }
+
+    .newsletter__block {
+        left: 0%;
+    }
+
+    .form_block {
+        left: 0%;
+    }
+
+    .testimonials_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
 }
 
 @media (width: 1024px) and (height: 1366px) {
     .destinations_body {
         display: flex;
+    }
+
+    .testimonials_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
     }
 }
 
@@ -307,5 +458,23 @@
         --font-size-31xl: 30px;
     }
 
-    .child {}
+    .newsletter__bg {
+        right: 0%;
+    }
+
+    .newsletter__block {
+        left: 0%;
+    }
+
+    .form_block {
+        left: 0%;
+    }
+
+    .testimonials_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
 }

@@ -655,7 +655,7 @@ img.rectangle_img {
 .book_a_trip_card_child {
     position: absolute;
     left: 66%;
-    top: 87%;
+    top: 53.5%;
     border-radius: var(--br-lg);
     background-color: var(--white);
     box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02), 0 64.8px 46.85px rgba(0, 0, 0, 0.02), 0 38.5px 25.48px rgba(0, 0, 0, 0.01), 0 20px 13px rgba(0, 0, 0, 0.01), 0 8.1px 6.52px rgba(0, 0, 0, 0.01), 0 1.9px 3.15px transparent;
@@ -666,7 +666,6 @@ img.rectangle_img {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    display: none;
 }
 
 .book_a_trip_card_child .card_icon img {
@@ -804,13 +803,13 @@ span.progress_block_done {
     align-items: flex-start;
     flex-wrap: nowrap;
     padding: 0px 34px;
-    bottom: 7.5%;
+    bottom: 29.5%;
     left: 8%;
 }
 
 .pagination_icon-arrow {
     position: relative;
-    bottom: 18.5%;
+    bottom: 70.5%;
     left: 625px;
     width: 16px;
     height: 74.3px;
@@ -873,6 +872,11 @@ span.progress_block_done {
 }
 
 /* Newsletter  */
+.newsletter_component {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
 .newsletter__bg {
     width: 100%;
     height: 407px;
@@ -880,7 +884,11 @@ span.progress_block_done {
     background-size: cover;
     background-position: center;
     position: relative;
-    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 4%;
+    justify-content: space-evenly;
 }
 
 .newsletter__block {
@@ -888,6 +896,17 @@ span.progress_block_done {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    left: 5%;
+}
+
+.newsletter__block h3 {
+    font-size: 33px;
+    line-height: 54px;
+    font-weight: 600;
+    font-family: var(--font-poppins);
+    color: var(--text-clr);
+    text-align: center;
 }
 
 .form_block .form_btn {
@@ -918,12 +937,18 @@ input#email {
     border: none;
 }
 
+.input-container .form-control:focus+.input-icon {
+    display: none;
+}
+
 .form_block {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    position: relative;
+    left: 5%;
 }
 
 .input-container {
@@ -933,5 +958,32 @@ input#email {
 .input-icon {
     position: absolute;
     top: 22px;
-    left: 16px;
+    left: 95px;
+}
+
+img.newsletter__icon {
+    position: absolute;
+    bottom: 88%;
+    left: 96%;
+    width: 70px;
+    height: 70px;
+}
+
+/* Footer  */
+.footer_info a h4 {
+    font-weight: 500;
+    font-size: 44px;
+    color: var(--st);
+}
+
+.footer_info p {
+    font-family: var(--font-poppins);
+    font-size: 13px;
+    line-height: 124.5%;
+    font-weight: 500;
+    color: var(--text-clr);
+}
+
+.pointer {
+    cursor: pointer;
 }

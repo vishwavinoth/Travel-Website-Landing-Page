@@ -135,11 +135,6 @@
     .testimonials_component {
         height: 400px;
     }
-
-
-    .testimonials_component {
-        height: 650px;
-    }
 }
 
 @media (max-width: 991.98px) {
@@ -193,10 +188,7 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    
-    .testimonials_component {
-        height: 400px;
-    }
+
 
     span.child {
         display: none;

@@ -487,12 +487,11 @@ img.navigation-icon {
 
 .decore-icon {
     position: absolute;
-    bottom: 610px;
-    left: 525px;
-    max-width: 97px;
+    width: 97px;
     height: 253px;
     z-index: 0;
-    display: none;
+    left: 34%;
+    top: 38.5%;
 }
 
 /* book a trip component  */
